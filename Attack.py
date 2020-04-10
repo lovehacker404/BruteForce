@@ -125,11 +125,18 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
     proxystatus = prox+wi+"["+gr+"ON"+wi+"]" if useproxy !=False else yl+"["+rd+"OFF"+yl+"]"
     print(gr+"""
 ==================================
-[---]        """+wi+"""Facebom"""+gr+"""         [---]
+[---]        """+wi+"""lovehacker"""+gr+"""         [---]
+
+╭━━╮╭╮╱╱╱╱╱╱╭╮╱╭━╮╭━╮╱╱╱╭━╮
+┃╭╮┃┃┃╱╱╱╱╱╱┃┃╱┃┃╰╯┃┃╱╱╱┃╭╯
+┃╰╯╰┫┃╭━━┳━━┫┃╭┫╭╮╭╮┣━━┳╯╰┳┳━━╮
+┃╭━╮┃┃┃╭╮┃╭━┫╰╯┫┃┃┃┃┃╭╮┣╮╭╋┫╭╮┃
+┃╰━╯┃╰┫╭╮┃╰━┫╭╮┫┃┃┃┃┃╭╮┃┃┃┃┃╭╮┃
+╰━━━┻━┻╯╰┻━━┻╯╰┻╯╰╯╰┻╯╰╯╰╯╰┻╯╰╯
 ==================================
 [---]  """+wi+"""BruteForce Facebook  """+gr+""" [---]
 ==================================
-[---]         """+yl+"""CONFIG"""+gr+"""         [---]
+[---]        """+yl+"""BlackMafia"""+gr+"""         [---]
 ==================================
 [>] Target      :> """+wi+username+gr+"""
 {}""".format("[>] Wordlist    :> "+yl+str(wordlist) if passwd==None else "[>] Password    :> "+yl+str(passwd))+gr+"""
@@ -210,7 +217,7 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
     exit(1)
 
 parse = optparse.OptionParser(wi+"""
-Usage: python ./facebom.py [OPTIONS...]
+Usage: python ./Attack.py [OPTIONS...]
 -------------
 OPTIONS:
        |
@@ -281,9 +288,9 @@ if __name__=='__main__':
   Main()
 
 ##############################################################
-#####################                #########################
+#####################  WhatsApp Num  #########################
+#####################   03094161457  #########################
 #####################   END OF TOOL  #########################
-#####################                #########################
 ##############################################################
 #This Tool by lovehacker
 #Have a nice day :)
