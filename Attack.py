@@ -125,7 +125,7 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
     proxystatus = prox+wi+"["+gr+"ON"+wi+"]" if useproxy !=False else yl+"["+rd+"OFF"+yl+"]"
     print(gr+"""
 =========================================
-        """+wi+"""lovehacker"""+wi+"""       
+        """+wi+"""lovehacker"""+yl+"""       
 ╭━━╮╭╮╱╱╱╱╱╱╭╮╱╭━╮╭━╮╱╱╱╭━╮
 ┃╭╮┃┃┃╱╱╱╱╱╱┃┃╱┃┃╰╯┃┃╱╱╱┃╭╯
 ┃╰╯╰┫┃╭━━┳━━┫┃╭┫╭╮╭╮┣━━┳╯╰┳┳━━╮
@@ -138,7 +138,7 @@ def FBOM(username, wordlist, proxy=None,passwd=None):
 ─░█── █▄▄█ █▄▄▀ █─▀█ █▀▀ ──█── 
 ─░█── ▀──▀ ▀─▀▀ ▀▀▀▀ ▀▀▀ ──▀──  """+gr+"""
 ========================================
-     """+yl+"""
+     """+rd+"""
 ╔╗─╔╗─────╔╗
 ║║─║║─────║║
 ║╚═╝╠══╦══╣║╔╦╦═╗╔══╗
